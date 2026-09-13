@@ -10,7 +10,7 @@ authors:
     affiliation: "Korea Hydrographic and Oceanographic Agency"
 version: "1.0.0"
 license: MIT
-repository-code: "https://github.com/syongkim/ktide"
+repository-code: "https://github.com/syongkim/KTide"
 # doi: 10.5281/zenodo.XXXXXXX   # version DOI of the first Zenodo harvest
 abstract: >-
   Python implementation of KTide (Q=0 recursive least squares on stored

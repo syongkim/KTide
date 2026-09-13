@@ -17,12 +17,12 @@ git add LICENSE NOTICE README.md CITATION.cff ZENODO.md requirements.txt \
 git commit -m "KTide Python: Q=0 sequential harmonic analysis as distributed."
 ```
 
-Create an empty public repository `ktide` under https://github.com/syongkim
+Create an empty public repository `KTide` under https://github.com/syongkim
 (no README on GitHub, so the first push is clean). Then:
 
 ```bash
 git branch -M main
-git remote add origin git@github.com:syongkim/ktide.git
+git remote add origin git@github.com:syongkim/KTide.git
 git push -u origin main
 ```
 
@@ -42,7 +42,7 @@ should resolve without a login.
 ## 2. Flip the repo on
 
 1. Zenodo: GitHub icon (top right) → **GitHub**.
-2. Find `syongkim/ktide` and switch it **on**.
+2. Find `syongkim/KTide` and switch it **on**.
 3. Zenodo installs a webhook on that repository.
 
 If the repo does not appear, grant Zenodo access to that repository in
@@ -53,9 +53,9 @@ GitHub → Settings → Applications → Zenodo → Repository access.
 Zenodo does not mint a DOI from an ordinary push. It mints one when
 GitHub publishes a **Release**.
 
-1. GitHub → `ktide` → **Releases** → **Draft a new release**.
+1. GitHub → `KTide` → **Releases** → **Draft a new release**.
 2. Tag: `v1.0.0` (create tag on `main`).
-3. Title: `ktide v1.0.0`.
+3. Title: `KTide v1.0.0`.
 4. Publish release.
 
 Wait one to several minutes. Zenodo harvests the tag, builds a tarball,
