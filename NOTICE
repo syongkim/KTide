@@ -11,9 +11,10 @@ RIOPS sliding-window operator of Smith et al. (2021). Those originals
 are not included and are not redistributed.
 
 The \(Q=0\) update is recursive least squares (ordinary least squares in
-covariance form). Mathematical methods are not copyrighted. This
-repository claims copyright only in the new Python expression (MIT
-License).
+covariance form). Sequential moments (`KSMoments`, `KSPairs`) are not
+in this repository; they are at https://github.com/syongkim/ksstats.
+Mathematical methods are not copyrighted. This repository claims
+copyright only in the new Python expression (MIT License).
 
 Do not cite this software as Heemink \(Q>0\) residual prediction, or as
 the 33-name, 30-day RIOPS operator. Those writings are different products.

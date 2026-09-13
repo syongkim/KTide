@@ -5,7 +5,9 @@ stored coastal archives, as recorded in Kim and Byun (submitted to
 *J. Atmos. Oceanic Technol.*).
 
 This is the paper implementation. MATLAB KTide is **not** included.
-T\_TIDE, UTide, and TIRA are **not** included. See `NOTICE`.
+T\_TIDE, UTide, and TIRA are **not** included. Sequential moments
+(`KSMoments`, `KSPairs`) live in a **separate** repository,
+[syongkim/ksstats](https://github.com/syongkim/ksstats). See `NOTICE`.
 
 ## Run
 
@@ -13,7 +15,6 @@ T\_TIDE, UTide, and TIRA are **not** included. See `NOTICE`.
 python -m pip install -r requirements.txt
 PYTHONPATH=. python examples/fit_one_series.py
 PYTHONPATH=. python examples/resume_checkpoint.py
-PYTHONPATH=. python examples/ksstats_slice.py
 ```
 
 `fit_ktide` times are MATLAB serial datenum (days). The example builds
@@ -26,12 +27,11 @@ original calendar epoch (`epoch_dnum`) together with `(m_init, P_init)`;
 | Path | What |
 |------|------|
 | `ktide/` | Sequential Kalman harmonic analysis (`fit_ktide`, `fit_ktide_uv`) |
-| `ksstats/` | Sequential mean / variance / pairwise covariance (Yoo et al. 2017, App. A) |
 | `examples/` | Minimal calls matching Appendix B of the manuscript |
 | `tables/` | Comparison CSVs used for the ranked figures and Table A1 |
 
-Not included: four-method driver runs, Incheon hourly gauge records,
-KHOA operational wrappers.
+Not included: `ksstats`, four-method driver runs, Incheon hourly gauge
+records, KHOA operational wrappers.
 
 ## License
 

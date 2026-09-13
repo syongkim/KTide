@@ -13,7 +13,7 @@ On the machine with git and SSH to GitHub:
 cd /pao1/work/papers/ktide/deposit
 git init
 git add LICENSE NOTICE README.md CITATION.cff ZENODO.md requirements.txt \
-  .gitignore ktide ksstats examples tables
+  .gitignore ktide examples tables
 git commit -m "KTide Python: Q=0 sequential harmonic analysis as distributed."
 ```
 
@@ -72,6 +72,7 @@ version DOIs; the concept DOI stays.
 
 ## 4. What not to upload
 
+- `ksstats` (separate repository `syongkim/ksstats`)
 - `papers/ktide/python/` experiment drivers and `out/`
 - MATLAB KTide (`ktide_setup.m` and the operational tree)
 - T_TIDE / UTide / TIRA distributions
