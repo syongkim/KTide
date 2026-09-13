@@ -45,8 +45,36 @@ should resolve without a login.
 2. Find `syongkim/KTide` and switch it **on**.
 3. Zenodo installs a webhook on that repository.
 
-If the repo does not appear, grant Zenodo access to that repository in
-GitHub → Settings → Applications → Zenodo → Repository access.
+If the repo does not appear, the GitHub App still has the old repository
+list (Zenodo was authorised before that repo existed):
+
+1. GitHub → Settings → Applications → **Installed GitHub Apps** (or
+   Authorized OAuth Apps) → **Zenodo** → **Repository access**.
+2. Add `ksstats` (or set **All repositories**). Save.
+3. Return to Zenodo → GitHub and click the **sync / refresh** control.
+   A new public repo does not show up by itself.
+
+The GitHub listing page on zenodo.org is heavy and often returns
+**504 Gateway Time-out**. That page is not required to mint a DOI.
+
+## 2b. Manual upload (when GitHub harvest or the listing page times out)
+
+1. Make a zip of the tree (no `.git`):
+
+```bash
+cd /pao1/work/papers/ktide/deposit
+git archive --format=zip --prefix=KTide-1.0.0/ -o /tmp/KTide-1.0.0.zip HEAD
+```
+
+2. When zenodo.org responds: **Upload** → **New upload** (not the GitHub
+   list). Attach that zip. Title, creators, MIT, related identifier =
+   `https://github.com/syongkim/KTide`. Publish.
+3. The landing page shows a **version DOI** (`10.5281/zenodo.…`). Put
+   that in `CITATION.cff` and in `\datastatement`.
+
+A later GitHub Release harvest, if the webhook is on, is a new version
+of the same concept DOI. Manual upload and GitHub harvest must not both
+be used as two unrelated records for the same tag.
 
 ## 3. Mint the DOI (a GitHub Release)
 

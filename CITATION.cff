@@ -11,7 +11,7 @@ authors:
 version: "1.0.0"
 license: MIT
 repository-code: "https://github.com/syongkim/KTide"
-# doi: 10.5281/zenodo.XXXXXXX   # version DOI of the first Zenodo harvest
+doi: 10.5281/zenodo.22738041
 abstract: >-
   Python implementation of KTide (Q=0 recursive least squares on stored
   coastal archives) recorded in Kim and Byun (J. Atmos. Oceanic Technol.,

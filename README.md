@@ -40,7 +40,6 @@ authors' terms. Method literature remains with its authors.
 
 ## Cite
 
-Until a Zenodo DOI exists, cite the paper. After the first GitHub release
-is harvested by Zenodo, replace the identifier in `CITATION.cff` and in
-the paper's data availability statement with the **version DOI** of that
-release (not only the GitHub URL).
+Version DOI of `v1.0.0`: [10.5281/zenodo.22738041](https://doi.org/10.5281/zenodo.22738041).
+The concept DOI [10.5281/zenodo.22738040](https://doi.org/10.5281/zenodo.22738040)
+always points at the latest version. Cite the paper for the method.
