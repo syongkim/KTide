@@ -1,7 +1,7 @@
 # KTide (Python)
 
 Sequential Kalman harmonic analysis (\(Q=0\) recursive least squares) of
-stored coastal archives, as recorded in Kim and Byun (submitted to
+stored coastal archives, as recorded in Kim and Byun (in prep.,
 *J. Atmos. Oceanic Technol.*).
 
 This is the paper implementation. MATLAB KTide is **not** included.

@@ -3,7 +3,7 @@ analysis with vanishing process noise \(Q=0\), recorded in:
 
   Kim, S. Y., and D.-S. Byun, KTide: Sequential Kalman Harmonic Analysis
   of Large-Volume Spatial Time Series, J. Atmos. Oceanic Technol.,
-  submitted.
+  in prep.
 
 It is not MATLAB KTide, not T_TIDE, not UTide, not TIRA, not NEMO
 diaharm, and not the adaptive filter of Heemink et al. (1991) or the

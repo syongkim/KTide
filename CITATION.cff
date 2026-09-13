@@ -15,7 +15,7 @@ doi: 10.5281/zenodo.22738041
 abstract: >-
   Python implementation of KTide (Q=0 recursive least squares on stored
   coastal archives) recorded in Kim and Byun (J. Atmos. Oceanic Technol.,
-  submitted). Not MATLAB KTide, T_TIDE, UTide, TIRA, NEMO diaharm, or
+  in prep.). Not MATLAB KTide, T_TIDE, UTide, TIRA, NEMO diaharm, or
   Heemink/Smith sequential writings.
 keywords:
   - tidal harmonic analysis
@@ -32,4 +32,4 @@ preferred-citation:
   title: "KTide: Sequential Kalman Harmonic Analysis of Large-Volume Spatial Time Series"
   journal: "J. Atmos. Oceanic Technol."
   year: 2026
-  notes: submitted
+  notes: in prep.
