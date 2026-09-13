@@ -1,0 +1,46 @@
+# KTide (Python)
+
+Sequential Kalman harmonic analysis (\(Q=0\) recursive least squares) of
+stored coastal archives, as recorded in Kim and Byun (submitted to
+*J. Atmos. Oceanic Technol.*).
+
+This is the paper implementation. MATLAB KTide is **not** included.
+T\_TIDE, UTide, and TIRA are **not** included. See `NOTICE`.
+
+## Run
+
+```bash
+python -m pip install -r requirements.txt
+PYTHONPATH=. python examples/fit_one_series.py
+PYTHONPATH=. python examples/resume_checkpoint.py
+PYTHONPATH=. python examples/ksstats_slice.py
+```
+
+`fit_ktide` times are MATLAB serial datenum (days). The example builds
+them from `numpy.datetime64`. Resume from a checkpoint by passing the
+original calendar epoch (`epoch_dnum`) together with `(m_init, P_init)`;
+`m` alone cannot be resumed.
+
+## Contents
+
+| Path | What |
+|------|------|
+| `ktide/` | Sequential Kalman harmonic analysis (`fit_ktide`, `fit_ktide_uv`) |
+| `ksstats/` | Sequential mean / variance / pairwise covariance (Yoo et al. 2017, App. A) |
+| `examples/` | Minimal calls matching Appendix B of the manuscript |
+| `tables/` | Comparison CSVs used for the ranked figures and Table A1 |
+
+Not included: four-method driver runs, Incheon hourly gauge records,
+KHOA operational wrappers.
+
+## License
+
+MIT (`LICENSE`) for this Python. T\_TIDE and UTide remain under their
+authors' terms. Method literature remains with its authors.
+
+## Cite
+
+Until a Zenodo DOI exists, cite the paper. After the first GitHub release
+is harvested by Zenodo, replace the identifier in `CITATION.cff` and in
+the paper's data availability statement with the **version DOI** of that
+release (not only the GitHub URL).

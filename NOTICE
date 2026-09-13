@@ -1,0 +1,19 @@
+This archive is a Python implementation of sequential Kalman harmonic
+analysis with vanishing process noise \(Q=0\), recorded in:
+
+  Kim, S. Y., and D.-S. Byun, KTide: Sequential Kalman Harmonic Analysis
+  of Large-Volume Spatial Time Series, J. Atmos. Oceanic Technol.,
+  submitted.
+
+It is not MATLAB KTide, not T_TIDE, not UTide, not TIRA, not NEMO
+diaharm, and not the adaptive filter of Heemink et al. (1991) or the
+RIOPS sliding-window operator of Smith et al. (2021). Those originals
+are not included and are not redistributed.
+
+The \(Q=0\) update is recursive least squares (ordinary least squares in
+covariance form). Mathematical methods are not copyrighted. This
+repository claims copyright only in the new Python expression (MIT
+License).
+
+Do not cite this software as Heemink \(Q>0\) residual prediction, or as
+the 33-name, 30-day RIOPS operator. Those writings are different products.

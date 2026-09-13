@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "Cite this software and the accompanying paper."
+title: "KTide: sequential Kalman harmonic analysis (Python)"
+authors:
+  - family-names: Kim
+    given-names: Sung Yong
+    affiliation: "Korea Advanced Institute of Science and Technology"
+  - family-names: Byun
+    given-names: Do-Seong
+    affiliation: "Korea Hydrographic and Oceanographic Agency"
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/syongkim/ktide"
+# doi: 10.5281/zenodo.XXXXXXX   # version DOI of the first Zenodo harvest
+abstract: >-
+  Python implementation of KTide (Q=0 recursive least squares on stored
+  coastal archives) recorded in Kim and Byun (J. Atmos. Oceanic Technol.,
+  submitted). Not MATLAB KTide, T_TIDE, UTide, TIRA, NEMO diaharm, or
+  Heemink/Smith sequential writings.
+keywords:
+  - tidal harmonic analysis
+  - recursive least squares
+  - Kalman filter
+  - coastal archives
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Kim
+      given-names: Sung Yong
+    - family-names: Byun
+      given-names: Do-Seong
+  title: "KTide: Sequential Kalman Harmonic Analysis of Large-Volume Spatial Time Series"
+  journal: "J. Atmos. Oceanic Technol."
+  year: 2026
+  notes: submitted
