@@ -14,7 +14,7 @@ cd /pao1/work/papers/ktide/deposit
 git init
 git add LICENSE NOTICE README.md CITATION.cff ZENODO.md requirements.txt \
   .gitignore ktide examples tables
-git commit -m "KTide Python: Q=0 sequential harmonic analysis as distributed."
+git commit -m "KTide Python: Q=0 sequential recursive least squares."
 ```
 
 Create an empty public repository `KTide` under https://github.com/syongkim

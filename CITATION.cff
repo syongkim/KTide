@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Cite this software and the accompanying paper."
-title: "KTide: sequential Kalman harmonic analysis (Python)"
+title: "KTide: sequential recursive least squares (Python)"
 authors:
   - family-names: Kim
     given-names: Sung Yong
@@ -29,7 +29,7 @@ preferred-citation:
       given-names: Sung Yong
     - family-names: Byun
       given-names: Do-Seong
-  title: "KTide: Sequential Kalman Harmonic Analysis of Large-Volume Spatial Time Series"
+  title: "KTide: Sequential Recursive Least-Squares Harmonic Analysis of Large-Volume Spatial Time Series"
   journal: "J. Atmos. Oceanic Technol."
   year: 2026
   notes: in prep.

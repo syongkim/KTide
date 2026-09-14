@@ -1,6 +1,6 @@
 # KTide (Python)
 
-Sequential Kalman harmonic analysis (\(Q=0\) recursive least squares) of
+Sequential recursive least-squares harmonic analysis (\(Q=0\)) of
 stored coastal archives, as recorded in Kim and Byun (in prep.,
 *J. Atmos. Oceanic Technol.*).
 
@@ -26,9 +26,9 @@ original calendar epoch (`epoch_dnum`) together with `(m_init, P_init)`;
 
 | Path | What |
 |------|------|
-| `ktide/` | Sequential Kalman harmonic analysis (`fit_ktide`, `fit_ktide_uv`) |
+| `ktide/` | Sequential recursive least squares, \(Q=0\) (`fit_ktide`, `fit_ktide_uv`) |
 | `examples/` | Minimal calls matching Appendix B of the manuscript |
-| `tables/` | Comparison CSVs used for the ranked figures and Table A1 |
+| `tables/` | Comparison CSVs used for the four-method figures and Table A1 |
 
 Not included: `ksstats`, four-method driver runs, Incheon hourly gauge
 records, KHOA operational wrappers.

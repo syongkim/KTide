@@ -1,4 +1,4 @@
-"""KTide sequential Kalman harmonic analysis (paper copy).
+"""KTide sequential recursive least squares, Q=0 (paper copy).
 
 Copied from khoa.proj/.../KTide/ktide/. Does not include KHOA operational
 helpers (suitability, batch maps, wet-dry).
