@@ -4,6 +4,7 @@ title: "KTide: sequential recursive least squares (Python)"
 authors:
   - family-names: Kim
     given-names: Sung Yong
+    orcid: "https://orcid.org/0000-0003-1962-8992"
     affiliation: "Korea Advanced Institute of Science and Technology"
   - family-names: Byun
     given-names: Do-Seong
@@ -27,6 +28,7 @@ preferred-citation:
   authors:
     - family-names: Kim
       given-names: Sung Yong
+      orcid: "https://orcid.org/0000-0003-1962-8992"
     - family-names: Byun
       given-names: Do-Seong
   title: "KTide: Sequential Recursive Least-Squares Harmonic Analysis of Large-Volume Spatial Time Series"
