@@ -1,0 +1,9 @@
+{
+  "station": "0001",
+  "start": "2000-01-01T00:00Z",
+  "n": 8760,
+  "n_valid": 8760,
+  "resid_std_cm": 24.94690482131267,
+  "R": 0.001,
+  "note": "95% half-widths. KTide: (s2/R) P, white. UTide linear white/colored. TTide (ttide_py) linear (white) and cboot (colored)."
+}

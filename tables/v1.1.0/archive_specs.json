@@ -1,0 +1,52 @@
+{
+  "server": {
+    "host": "pao",
+    "cpu": "2 x Intel Xeon Gold 5218 (32 cores, 64 threads)",
+    "ram_GB": 251.0
+  },
+  "subset_period": "2025-01-01 to 2026-01-05",
+  "years_full_assumed": 5,
+  "M": 53,
+  "models": {
+    "YES3k": {
+      "files_subset": 9250,
+      "TB_subset": 3.518725208,
+      "TB_full_est": 17.59362604,
+      "grid": [
+        642,
+        610
+      ],
+      "levels": 41,
+      "wet_surface": 293440,
+      "wet_3d": 12031040,
+      "dt_surface_h": 1.0,
+      "dt_3d_h": 1.0,
+      "nt_full_surface": 43830.0,
+      "GB_batch_stack_surface_full": 102.8918016,
+      "GB_batch_stack_3d_full": 4218.5638656,
+      "GB_percell_P_surface": 26.37673472,
+      "GB_shared_P_plus_m_surface": 0.248927008,
+      "GB_one_slice_surface": 0.00313296
+    },
+    "MOHID300m": {
+      "files_subset": 740,
+      "TB_subset": 0.514746381359,
+      "TB_full_est": 2.573731906795,
+      "grid": [
+        1620,
+        1620
+      ],
+      "levels": 40,
+      "wet_surface": 1608459,
+      "wet_3d": 22796138,
+      "dt_surface_h": 1.0,
+      "dt_3d_h": 3.0,
+      "nt_full_surface": 43830.0,
+      "GB_batch_stack_surface_full": 563.99006376,
+      "GB_batch_stack_3d_full": 2664.41260944,
+      "GB_percell_P_surface": 144.581162592,
+      "GB_shared_P_plus_m_surface": 1.36406312,
+      "GB_one_slice_surface": 0.0209952
+    }
+  }
+}

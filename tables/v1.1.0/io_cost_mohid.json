@@ -1,0 +1,57 @@
+{
+  "files_total": 370,
+  "records_total": 9250,
+  "wet_cells": 1607821,
+  "grid_cells": 2624400,
+  "chunk": [
+    1,
+    540,
+    540
+  ],
+  "cell_ij": [
+    455,
+    287
+  ],
+  "runs": [
+    {
+      "method": "map",
+      "files": 20,
+      "records": 500,
+      "cells": 2624400,
+      "wall_s": 85.35836935043335,
+      "rchar_GB": 2.101338876,
+      "read_bytes_GB": 2.108207104,
+      "bytes_per_record_held": 20995200
+    },
+    {
+      "method": "cell",
+      "files": 20,
+      "records": 500,
+      "cells": 1,
+      "wall_s": 10.060771703720093,
+      "rchar_GB": 0.425576874,
+      "read_bytes_GB": 0.882683904,
+      "bytes_per_record_held": 8
+    },
+    {
+      "method": "block100",
+      "files": 20,
+      "records": 500,
+      "cells": 10000,
+      "wall_s": 11.047721147537231,
+      "rchar_GB": 0.424387896,
+      "read_bytes_GB": 0.882692096,
+      "bytes_per_record_held": 80000
+    },
+    {
+      "method": "chunk",
+      "files": 20,
+      "records": 500,
+      "cells": 291600,
+      "wall_s": 12.847809314727783,
+      "rchar_GB": 0.425440005,
+      "read_bytes_GB": 0.882765824,
+      "bytes_per_record_held": 2332800
+    }
+  ]
+}

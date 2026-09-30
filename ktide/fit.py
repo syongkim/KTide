@@ -54,6 +54,7 @@ def fit_ktide(
     nodal_mode: str = 'amp_phase',
     R: float = 1e-3,
     P0: float = 1e5,
+    Q: float = 0.0,
     store_stride: Optional[int] = None,
     epoch_dnum: Optional[float] = None,
     m_init: Optional[np.ndarray] = None,
@@ -87,6 +88,10 @@ def fit_ktide(
         관측 잡음 분산. 결측이 많을수록 키우면 수렴이 안정적.
     P0 : float
         초기 상태 공분산 대각값. 충분히 크면 초기값 무관하게 수렴.
+    Q : float
+        샘플 사이 상태 증분의 분산 (Kalman process noise). 기본 0 이면
+        recursive least squares. 양수이면 매 시각 ``P += Q I`` (결측에서도
+        predict). 아카이브 평균이 아닌 wandering ``(A,g)``.
     store_stride : int or None
         이력 저장 간격. None이면 ~1000 스냅샷.
     epoch_dnum : float or None
@@ -166,11 +171,14 @@ def fit_ktide(
     data_length = 0  # 격자(정점) 자료길이: 있으면 +1, 없으면 +0
 
     # ----- 순차 업데이트 -----
+    q = float(Q)
+    eye = np.eye(2 * nf) if q != 0.0 else None
     for k in range(nt):
         obs = zeta_m[k]
-
+        if q != 0.0:
+            P = P + q * eye
         if np.isnan(obs):
-            # 결측: +0, P/m 업데이트 없음
+            # 결측: m 업데이트 없음. Q=0 이면 P도 그대로.
             pass
         else:
             Gk = np.empty(2 * nf)

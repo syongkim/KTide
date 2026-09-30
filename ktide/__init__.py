@@ -1,7 +1,8 @@
 """KTide sequential recursive least squares, Q=0 (paper copy).
 
 Copied from khoa.proj/.../KTide/ktide/. Does not include KHOA operational
-helpers (suitability, batch maps, wet-dry).
+helpers (suitability, wet-dry reports). ``fit_ktide_shared`` is the
+shared-covariance map-slice update in double precision (v1.1.0).
 """
 from .fit import (
     fit_ktide,
@@ -13,6 +14,7 @@ from .fit import (
 from .constituents import incheon_constituents, ConstituentSet
 from .nodal_corrections import compute_nodal
 from .benchmark import run_benchmark, build_truth, compare_to_truth
+from .grid import fit_ktide_shared
 
 __all__ = [
     "fit_ktide",
@@ -26,4 +28,5 @@ __all__ = [
     "run_benchmark",
     "build_truth",
     "compare_to_truth",
+    "fit_ktide_shared",
 ]

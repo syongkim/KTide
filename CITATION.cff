@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Cite this software and the accompanying paper."
-title: "KTide: sequential recursive least squares (Python)"
+title: "KTide: recursive least-squares harmonic analysis of stored archives (Python)"
 authors:
   - family-names: Kim
     given-names: Sung Yong
@@ -9,10 +9,11 @@ authors:
   - family-names: Byun
     given-names: Do-Seong
     affiliation: "Korea Hydrographic and Oceanographic Agency"
-version: "1.0.0"
+version: "1.1.0"
+date-released: "2026-09-30"
 license: MIT
 repository-code: "https://github.com/syongkim/KTide"
-doi: 10.5281/zenodo.22738041
+doi: 10.5281/zenodo.22738040
 abstract: >-
   Python implementation of KTide (Q=0 recursive least squares on stored
   coastal archives) recorded in Kim and Byun (J. Atmos. Oceanic Technol.,
@@ -31,7 +32,7 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0003-1962-8992"
     - family-names: Byun
       given-names: Do-Seong
-  title: "KTide: Sequential Recursive Least-Squares Harmonic Analysis of Large-Volume Spatial Time Series"
+  title: "KTide: Recursive Least-Squares Harmonic Analysis of Large-Volume Spatial Time Series"
   journal: "J. Atmos. Oceanic Technol."
   year: 2026
   notes: in prep.

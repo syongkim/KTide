@@ -1,0 +1,39 @@
+{
+  "H0_m": 0.01,
+  "n_nodes": 3910,
+  "n_steps": 8760,
+  "t0": "2021-01-01 00:59:59.999997",
+  "n_always_wet": 2302,
+  "n_intertidal": 1595,
+  "n_never_wet": 13,
+  "n_distinct_masks": 1503,
+  "sec_exact_shared_group": 7.0850629806518555,
+  "sec_exact_pernode": 35.972984313964844,
+  "sec_majority_all": 10.85788607597351,
+  "float32_grid_alwayswet_K1_maxabs_dA_cm": 6004.59109974358,
+  "max_abs_dA_exact_vs_batch_cm": 2.8804225719543552,
+  "zone_A": {
+    "n": 2504,
+    "M2_dA_majority_minus_exact_rms_cm": 10.845654675947381,
+    "M2_dA_max_abs_cm": 187.4031022625835,
+    "M2_dg_rms_deg": 5.081179420041536
+  },
+  "zone_B": {
+    "n": 726,
+    "M2_dA_majority_minus_exact_rms_cm": 6.789868122343105e+35,
+    "M2_dA_max_abs_cm": 1.8293655590292496e+37,
+    "M2_dg_rms_deg": 106.3383954211153
+  },
+  "zone_C": {
+    "n": 431,
+    "M2_dA_majority_minus_exact_rms_cm": 4.4772805672246236e+36,
+    "M2_dA_max_abs_cm": 9.290250036534666e+37,
+    "M2_dg_rms_deg": 113.86770590135367
+  },
+  "zone_D": {
+    "n": 236,
+    "M2_dA_majority_minus_exact_rms_cm": 7.926714021278315e+27,
+    "M2_dA_max_abs_cm": 7.653995672291218e+28,
+    "M2_dg_rms_deg": 110.57998910273302
+  }
+}
