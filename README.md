@@ -40,6 +40,7 @@ authors' terms. Method literature remains with its authors.
 
 ## Cite
 
+Version DOI of `v1.1.0`: [10.5281/zenodo.23051866](https://doi.org/10.5281/zenodo.23051866).
 Version DOI of `v1.0.0`: [10.5281/zenodo.22738041](https://doi.org/10.5281/zenodo.22738041).
 
 ## v1.1.0 (2026-09-30)
